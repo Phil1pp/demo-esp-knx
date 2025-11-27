@@ -1,18 +1,11 @@
 #include <Arduino.h>
+
+#define MIN_CYCLE_TIME 5000 //ms
+
 #define STAT_LED_OFF HIGH
 #define STAT_LED_ON LOW
 
-//MAGIC-Home RGBWW module
 #define STAT_LED_GN 2 //green onboard LED
-#define LED_PIN 14
+#define STAT_LED_RD 5 //red onboard LED
 
-const unsigned long MIN_CYCLE_TIME = 5000; //ms
-
-#define GO_BELEUCHTUNG_SCHALTEN_EIN_AUS 1
-#define GO_BELEUCHTUNG_DIMMEN_ABSOLUT 2
-#define GO_BELEUCHTUNG_DIMMEN_RELATIV 3
-#define GO_BELEUCHTUNG_STATUS 4
-#define GO_BELEUCHTUNG_STATUS_DIMMWERT 5
-#define GO_ZENTRAL_SZENE 6
-#define GO_ZENTRAL_TAG_NACHT 7
-#define AMOUNT_OF_GA 7
+#define LED_PIN_PWM 14
